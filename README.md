@@ -617,7 +617,7 @@ const url = 'https://course-api.com/react-useReducer-cart-project';
 
 export const getCartItems = createAsyncThunk('cart/getCartItems', () => {
   return fetch(url)
-    .then((resp) => resp.json())
+    .then((resp) => resp.json()) 
     .catch((err) => console.log(error));
 });
 
